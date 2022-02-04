@@ -26,6 +26,7 @@ html {
 
 .image-container img {
   display: block;
+  /* max-width: 100%; */
 }
 
 /* Header */
@@ -156,6 +157,7 @@ header .mobile {
 
 .feature .image-container img {
   max-width: 100%;
+  height: auto;
 }
 
 .feature .content {
@@ -220,13 +222,15 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
-  display: flex;
-  justify-content: center;
-  /* flex-wrap: wrap; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-flow: column; */
 }
 
 #quotes-section .content {
   padding: 5rem 0;
+  display: flex;
+  justify-content: center;
 }
 
 #quotes-section .quote {
@@ -263,8 +267,8 @@ footer .copyright {
 }
 
 /*Media Queries*/
-@media only screen and (min-width: 890px) {
-  .feature h2 {
+@media only screen and (max-width: 890px) {
+  /* .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
     font-weight: normal;
@@ -273,7 +277,7 @@ footer .copyright {
   .feature h3 {
     font-size: .875rem;
     line-height: 1.4;
-  }
+  } */
 }
 
 @media only screen and (max-width: 760px) {
@@ -343,13 +347,27 @@ footer .copyright {
   }
 
   #features-section {
+    padding: 1rem;
     flex-flow: column;
-    padding: 0;
   }
 
   .feature {
-    margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    margin: 0.5rem;
+    padding: 1rem;
+    line-height: 1.3;
+  }
+
+  .feature .content {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+
+  .feature h2 {
+    font-size: 1.125rem;
+  }
+
+  .feature h3 {
+    font-size: .875rem;
   }
 
   #filters-section {
@@ -362,9 +380,9 @@ footer .copyright {
   
   #filters-section .content h2 {
     padding-bottom: .625rem;
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     line-height: 1.3;
-    font-weight: normal;
+    /* font-weight: normal; */
   }
   
   #filters-section .content h3 {
@@ -372,16 +390,17 @@ footer .copyright {
     line-height: 1.4;
   }
   
-  #quotes-section content {
-    padding: 1.875rem .625rem;
+  #quotes-section .content {
+    /* padding: 1.875rem .625rem; */
+    padding: 3rem 1.5rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -415,6 +434,19 @@ footer .copyright {
 
   #sign-up-cta h2 {
     font-size: 2rem;
+  }
+
+  #feature-section {
+    padding: 0;
+  }
+
+ .feature {
+    /* padding: 0; */
+    margin: 0;
+  }
+
+  .feature .content {
+    padding-bottom: 1.785rem;
   }
 
   #quotes-section .content {
