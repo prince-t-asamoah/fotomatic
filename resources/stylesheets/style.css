@@ -222,7 +222,7 @@ header .mobile {
   background-color: #f3f3f3;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 #quotes-section .content {
@@ -263,7 +263,7 @@ footer .copyright {
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 890px) {
+@media only screen and (min-width: 890px) {
   .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
@@ -395,6 +395,10 @@ footer .copyright {
     display: none;
   }
 
+  footer {
+    top: 2.6875rem;
+  }
+
   footer .content {
     font-size: .625rem;
   }
@@ -413,7 +417,21 @@ footer .copyright {
     font-size: 2rem;
   }
 
+  #quotes-section .content {
+    flex-flow: column;
+    padding: 1.875rem .625rem;
+  }
+
+  #quotes-section .quote {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  #quotes-section .quote-citation {
+    padding-top: 1rem;
+  }
+
   footer {
-    top: 0px;
+    top: 2.75rem;
   }
 }
