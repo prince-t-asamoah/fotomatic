@@ -291,11 +291,14 @@ header .mobile {
 #filters-section {
   padding: 4rem 0;
   background-color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
 }
 
 #filters-section .content {
   padding: 0 .625rem;
   margin-bottom: 5rem;
+  line-height: 1.4;
 }
 
 #filters-section .content h2 {
@@ -314,8 +317,12 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
+#filters-section img {
+  max-width: 100%;
+}
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
