@@ -236,6 +236,15 @@ header .mobile {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.feature .image-container img {
+  max-width: 100%;
+}
+
+.feature .content {
+  padding: 2.5rem 0; 
 }
 
 .feature h2 {
