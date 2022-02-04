@@ -400,12 +400,15 @@ header .mobile {
 footer {
   background-color: #9b9b9b;
   padding: 1.5rem 2rem;
+  position: relative;
+  top: 5.3125rem;
 }
 
 footer .content {
+  font-size: .75rem;
   color: white;
   display: flex;
-  font-size: .75rem;
+  justify-content: space-between;
 }
 
 footer .copyright {
